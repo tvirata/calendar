@@ -1,0 +1,5 @@
+{
+    "port": 3000,
+    "sessionSecret": "EqkUV36qi8gb0oxLMQd0YkdFY5T7CB",
+    "generateUniqueIds": true
+}
