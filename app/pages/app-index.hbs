@@ -1,12 +1,16 @@
-<div class="header">
-  Create a date
+<div class="helper">
+  <p><strong>Create a date</strong></p>
+  <br>
+  <p>Click edit and change 'Add a Date' to week starting with Sunday</p>
+  <p>(E.g. 10/01/2023)</p>
+
 </div>
 <div class="board" array key="boards" sortable="boards">
   {{#for board in boards}}
-  <div object key:board-heading="@search" default:board-heading="A Project">
-    <p class="header__text" target:board-heading="@innerText">{{default
-      board.boardHeading}}</p>
+  <div object key:board-heading="@search" default:board-heading="date">
+    <p class="header__text" target:board-heading="@innerText"><strong>{{default
+        board.boardHeading}}</strong></p>
     {{/for}}
-    <a class="button button--add-stack" href="/{{currentUser.details.username}}/calendar">Edit</a>
+    <a class="button button--add-board" href="/{{currentUser.details.username}}/calendar">Edit</a>
   </div>
 </div>

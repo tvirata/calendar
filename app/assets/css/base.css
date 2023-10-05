@@ -36,10 +36,10 @@ button::-moz-focus-inner {
   height: 36px;
   padding: 0 12px;
   line-height: 36px;
-  color: #FFF;
+  color: black;
   font-size: 14px;
   text-align: center;
-  background-color: #536988;
+  background-color: bisque;
   border-radius: 5px;
 }
 
