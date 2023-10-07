@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="board" array key="boards" sortable="boards">
+    <div class="board" array key="boards">
         {{#for board in boards}}
         <div object key:board-heading="@search" default:board-heading="The Date">
             <div>
@@ -7,11 +7,11 @@
                     board.boardHeading}}</p>
             </div>
             <div class="board-container">
-                <div class="board" array key="stacks" sortable="stacks">
+                <div class="board" array key="stacks">
                     {{#for stack in board.stacks}}
                     <div class="stack" object key:stack-heading="@search" default:stack-heading="Day of the Week">
                         <div class="stack__top">
-                            <p class="stack__text" target:stack-heading="@innerText" edit:stack-heading>{{default
+                            <p class="stack__text" target:stack-heading="@innerText">{{default
                                 stack.stackHeading
                                 "New
                                 stack item"}}</p>
@@ -23,7 +23,7 @@
                         <div class="stack__list" key="cards" array sortable="cards">
                             {{#for card in stack.cards}}
                             <div class="card" object key:card-text="@search" edit:card-text>
-                                <p class="card__text" target:card-text="@innerText">{{default card.cardText "New date
+                                <p class="card__text" target:card-text="@innerText">{{default card.cardText "Todo
                                     item"}}</p>
                                 <img class="card__drag" src="/assets/images/drag.svg">
                             </div>
