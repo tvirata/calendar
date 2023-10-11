@@ -21,7 +21,7 @@
                         <div class="stack__list" key="cards" array sortable="cards">
                             {{#for card in stack.cards}}
                             <div class="card" object key:card-text="@search" key:event-time="@search"
-                                key:id="{{cardText.id}}" key:id="{{eventTime.id}}" edit:event-time edit:card-text>
+                                key:id="{{card.id}}" edit:event-time edit:card-text>
                                 <p class="event__time" target:event-time="@innerText">{{default
                                     card.eventTime "12:00AM"}}</p>
                                 <p class="card__text" target:card-text="@innerText">
