@@ -14,8 +14,11 @@
   font-weight: 500;
 }
 
-.logo__version {
-  color: white;
+
+.logo:hover {
+  transition: all 0.4s ease 0s;
+  color: #ffee10;
+  text-shadow: 0 0 5px #ffee10;
 }
 
 .nav {
@@ -31,6 +34,16 @@
   align-items: center;
   margin-left: auto;
   margin-right: 1rem;
+}
+
+.nav__user .user__name {
+  color: black;
+  font-weight: bolder;
+}
+
+.nav__user .user__name:hover {
+  color: aliceblue;
+  cursor: default;
 }
 
 .nav__button {
