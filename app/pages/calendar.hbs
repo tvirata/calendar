@@ -1,7 +1,7 @@
 <div class="header">
     <div class="board" array key="boards">
         {{#for board in boards}}
-        <div object key:board-heading="@search" default:board-heading="The Date">
+        <div object key:board-heading="@search" key:id="{{board.id}}">
             <div>
                 <p class="header__text" target:board-heading="@innerText" edit:board-heading>{{default
                     board.boardHeading}}</p>
@@ -9,12 +9,10 @@
             <div class="board-container">
                 <div class="board" array key="stacks">
                     {{#for stack in board.stacks}}
-                    <div class="stack" object key:stack-heading="@search" default:stack-heading="Day of the Week">
+                    <div class="stack" object key:stack-heading="@search" key:id="{{stack.id}}">
                         <div class="stack__top">
                             <p class="stack__text" target:stack-heading="@innerText">{{default
-                                stack.stackHeading
-                                "New
-                                stack item"}}</p>
+                                stack.stackHeading}}</p>
                             <button class="stack__add-card" new:card>
                                 <img class="stack__new-icon" src="/assets/images/new.svg">
                                 <p>Add list</p>
@@ -22,9 +20,13 @@
                         </div>
                         <div class="stack__list" key="cards" array sortable="cards">
                             {{#for card in stack.cards}}
-                            <div class="card" object key:card-text="@search" edit:card-text>
-                                <p class="event__time" object key:event-time="@innerText" edit:event-time>{{default card.eventTime "12:00AM"}}</p>
-                                <p class="card__text" target:card-text="@innerText">{{default card.cardText "Todo item"}}</p>
+                            <div class="card" object key:card-text="@search" key:event-time="@search"
+                                key:id="{{cardText.id}}" key:id="{{eventTime.id}}" edit:event-time edit:card-text>
+                                <p class="event__time" target:event-time="@innerText">{{default
+                                    card.eventTime "12:00AM"}}</p>
+                                <p class="card__text" target:card-text="@innerText">
+                                    {{default card.cardText "Todo
+                                    item"}}</p>
                                 <img class="card__drag" src="/assets/images/drag.svg">
                             </div>
                             {{/for}}
