@@ -6,6 +6,24 @@
 
 </div>
 <div class="board" array key="boards">
+  <button class="button" new:board>Add a Week</button>
+  {{#for board in boards}}
+  <div object key:board-heading="@search" key:id="{{board.id}}" default:board-heading="date">
+    <p class="header__text" target:board-heading="@innerText"><strong>{{default
+        board.boardHeading}}</strong></p>
+    <a class="button button--add-board" href="/{{../currentUser.details.username}}/calendar/{{board.id}}">Edit</a>
+    {{/for}}
+  </div>
+</div>
+
+{{!-- <div class="helper">
+  <p><strong>Create a date</strong></p>
+  <br>
+  <p>Click edit and change 'Add a Date' to week starting with Sunday</p>
+  <p>(E.g. 10/01/2023)</p>
+
+</div>
+<div class="board" array key="boards">
   {{#for board in boards}}
   <div object key:board-heading="@search" default:board-heading="date">
     <p class="header__text" target:board-heading="@innerText"><strong>{{default
@@ -13,4 +31,4 @@
     {{/for}}
     <a class="button button--add-board" href="/{{currentUser.details.username}}/calendar">Edit</a>
   </div>
-</div>
+</div> --}}
