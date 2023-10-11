@@ -221,4 +221,7 @@
   .stack__list {
     overflow-y: auto;
   }
+}}
+.event__time {
+  margin-left: 1em;
 }

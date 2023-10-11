@@ -23,8 +23,8 @@
                         <div class="stack__list" key="cards" array sortable="cards">
                             {{#for card in stack.cards}}
                             <div class="card" object key:card-text="@search" edit:card-text>
-                                <p class="card__text" target:card-text="@innerText">{{default card.cardText "Todo
-                                    item"}}</p>
+                                <p class="event__time" object key:event-time="@innerText" edit:event-time>{{default card.eventTime "12:00AM"}}</p>
+                                <p class="card__text" target:card-text="@innerText">{{default card.cardText "Todo item"}}</p>
                                 <img class="card__drag" src="/assets/images/drag.svg">
                             </div>
                             {{/for}}
