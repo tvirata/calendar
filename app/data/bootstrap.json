@@ -8,7 +8,7 @@
           "cards": [
             {
               "cardText": "Sleep in",
-              "id": "02hHkAC7NtP0CT"
+              "eventTime": "12:00AM"
             }
           ],
           "id": "LdDRCOw7ScfbGd"
@@ -18,7 +18,7 @@
           "cards": [
             {
               "cardText": "Project 2 due",
-              "id": "VW5qfSvPFBR6ag"
+              "eventTime": "12:00AM"
             }
           ],
           "id": "E6jdLSvscRBbqy"
@@ -28,7 +28,7 @@
           "cards": [
             {
               "cardText": "Study for mid term (Thursday)",
-              "id": "lG3uMVyUW9JHl8"
+              "eventTime": "12:00AM"
             }
           ],
           "id": "co6temTwwUDhQe"
@@ -38,7 +38,7 @@
           "cards": [
             {
               "cardText": "Dinner @ 6:00",
-              "id": "KC83X8ZR5teDfm"
+              "eventTime": "12:00AM"
             }
           ],
           "id": "TEP701wqAd6tSf"
@@ -48,7 +48,7 @@
           "cards": [
             {
               "cardText": "Mid term @ 12:30",
-              "id": "Q3ZW55nXGfehTQ"
+              "eventTime": "12:00AM"
             }
           ],
           "id": "0Ei9ydWoLvpFXQ"
@@ -58,7 +58,7 @@
           "cards": [
             {
               "cardText": "Buy grocery",
-              "id": "KC83X8ZR5teDfm"
+              "eventTime": "12:00AM"
             }
           ],
           "id": "TEP701wqAd6tSf"
@@ -68,13 +68,11 @@
           "cards": [
             {
               "cardText": "Do the laundry",
-              "id": "KC83X8ZR5teDfm"
+              "eventTime": "12:00AM"
             }
-          ],
-          "id": "TEP701wqAd6tSf"
+          ]
         }
-      ],
-      "id": "pTjdkgWaMfiyzh"
+      ]
     }
   ]
 }

@@ -1,14 +1,13 @@
 <div class="header">
-    <div class="board" array key="boards">
-        {{#for board in boards}}
-        <div object key:board-heading="@search" key:id="{{board.id}}">
+    <div class="board" key="boards">
+        <div object key:board-heading="@search" key:id="{{currentItem.id}}">
             <div>
                 <p class="header__text" target:board-heading="@innerText" edit:board-heading>{{default
-                    board.boardHeading}}</p>
+                    currentItem.boardHeading}}</p>
             </div>
             <div class="board-container">
                 <div class="board" array key="stacks">
-                    {{#for stack in board.stacks}}
+                    {{#for stack in currentItem.stacks}}
                     <div class="stack" object key:stack-heading="@search" key:id="{{stack.id}}">
                         <div class="stack__top">
                             <p class="stack__text" target:stack-heading="@innerText">{{default
@@ -18,7 +17,7 @@
                                 <p>Add list</p>
                             </button>
                         </div>
-                        <div class="stack__list" key="cards" array sortable="cards">
+                        <div class="stack__list" array key="cards" sortable>
                             {{#for card in stack.cards}}
                             <div class="card" object key:card-text="@search" key:event-time="@search"
                                 key:id="{{card.id}}" edit:event-time edit:card-text>
@@ -36,6 +35,5 @@
                 </div>
             </div>
         </div>
-        {{/for}}
     </div>
 </div>
