@@ -21,6 +21,14 @@
   margin-left: 1rem;
   margin-top: 2rem;
   padding-bottom: 2.5rem;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.drag {
+  cursor: grab;
 }
 
 .helper {
@@ -221,7 +229,8 @@
   .stack__list {
     overflow-y: auto;
   }
-}}
+}
+
 .event__time {
   margin-left: 1em;
 }

@@ -2,7 +2,7 @@
     <div class="board" key="boards">
         <div object key:board-heading="@search" key:id="{{currentItem.id}}">
             <div>
-                <p class="header__text" target:board-heading="@innerText" edit:board-heading>{{default
+                <p class="header__text" target:board-heading="@innerText" edit:board-heading:without-remove>{{default
                     currentItem.boardHeading}}</p>
             </div>
             <div class="board-container">
@@ -21,12 +21,12 @@
                             {{#for card in stack.cards}}
                             <div class="card" object key:card-text="@search" key:event-time="@search"
                                 key:id="{{card.id}}" edit:event-time edit:card-text>
+                                <img class="card__drag" src="/assets/images/drag.svg">
                                 <p class="event__time" target:event-time="@innerText">{{default
                                     card.eventTime "12:00AM"}}</p>
                                 <p class="card__text" target:card-text="@innerText">
                                     {{default card.cardText "Todo
                                     item"}}</p>
-                                <img class="card__drag" src="/assets/images/drag.svg">
                             </div>
                             {{/for}}
                         </div>

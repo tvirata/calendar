@@ -65,8 +65,21 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
+.button--edit-board {
+  margin-left: 1.25rem;
+  background-color: burlywood;
+  color: white;
+}
+
+.button--remove-board {
+  margin-left: 1.25rem;
+  background-color: brown;
+  color: white;
+}
+
 .button--add-board {
   margin-left: 1.25rem;
+  width: 50%;
 }
 
 .button:hover {

@@ -2,33 +2,53 @@
   <p><strong>Create a date</strong></p>
   <br>
   <p>Click edit and change 'Add a Date' to week starting with Sunday</p>
-  <p>(E.g. 10/01/2023)</p>
-
+  <p>(E.g. MM/DD/YYYY)</p>
 </div>
-<div class="board" array key="boards">
-  <button class="button" new:board>Add a Week</button>
-  {{#for board in boards}}
-  <div object key:board-heading="@search" key:id="{{board.id}}" default:board-heading="date">
-    <p class="header__text" target:board-heading="@innerText" edit:board-heading><strong>{{default
-        board.boardHeading}}</strong></p>
-    <a class="button button--add-board" href="/{{../currentUser.details.username}}/calendar/{{board.id}}">Edit</a>
+
+<div array key="boards">
+  <button class="button button--add-board" new:board=".board top">Add a Week</button>
+  <div object class="board">
+    <div array key="stacks">
+      <div object key:stack-heading="Sunday">
+        <div array key="cards">
+        </div>
+      </div>
+      <div object key:stack-heading="Monday">
+        <div array key="cards">
+        </div>
+      </div>
+      <div object key:stack-heading="Tuesday">
+        <div array key="cards">
+        </div>
+      </div>
+      <div object key:stack-heading="Wednesday">
+        <div array key="cards">
+        </div>
+      </div>
+      <div object key:stack-heading="Thursday">
+        <div array key="cards">
+        </div>
+      </div>
+      <div object key:stack-heading="Friday">
+        <div array key="cards">
+        </div>
+      </div>
+      <div object key:stack-heading="Saturday">
+        <div array key="cards">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div key="boards">
+    {{#for board in boards}}
+    <div object key:board-heading="@search" key:id="{{board.id}}">
+      <p class="header__text drag" target:board-heading="@innerText">{{default
+        board.boardHeading "Add a date"}}</p>
+      <a class="button button--edit-board" href="/{{../currentUser.details.username}}/calendar/{{board.id}}">Edit</a>
+      {{!-- <button class="button button--remove-board"
+        onclick="if (!confirm('Are you sure you want to delete date: {{board.boardHeading}}?')) { return false }"
+        remove>Remove</button> --}}
+    </div>
     {{/for}}
   </div>
 </div>
-
-{{!-- <div class="helper">
-  <p><strong>Create a date</strong></p>
-  <br>
-  <p>Click edit and change 'Add a Date' to week starting with Sunday</p>
-  <p>(E.g. 10/01/2023)</p>
-
-</div>
-<div class="board" array key="boards">
-  {{#for board in boards}}
-  <div object key:board-heading="@search" default:board-heading="date">
-    <p class="header__text" target:board-heading="@innerText"><strong>{{default
-        board.boardHeading}}</strong></p>
-    {{/for}}
-    <a class="button button--add-board" href="/{{currentUser.details.username}}/calendar">Edit</a>
-  </div>
-</div> --}}
