@@ -1,0 +1,96 @@
+.about body {
+  font-weight: lighter;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.about .pfp {
+  width: 200px;
+  height: 200px;
+}
+
+.about .profiles {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.about .profile {
+  flex-grow: 1;
+  padding: 20px;
+  margin: 40px;
+  margin-top: 0;
+
+  background-color: rgb(238, 238, 238);
+  box-shadow: 10px 10px 10px gray;
+
+  height: 600px;
+  width: 350px;
+
+  text-align: center;
+}
+
+.about .menu {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  border: none;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+  color: white;
+}
+
+.about .home {
+  flex-grow: 1;
+}
+
+.about .space {
+  flex-grow: 7;
+}
+
+.about .signup {
+  flex-grow: 1;
+}
+
+.about .login {
+  flex-grow: 1;
+}
+
+.about h1 {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.about button {
+  border: none;
+  margin: 0;
+  padding: 30px;
+  color: white;
+  background-color: purple;
+
+  font-size: 20px;
+}
+
+.space:hover {
+  background-color: purple;
+}
+
+.space:active {
+  background-color: purple;
+}
+
+.about button:hover {
+  background-color: rgb(151, 33, 151);
+}
+
+.about button:active {
+  background-color: rgb(177, 59, 177);
+}
+
+.about p {
+  line-height: 27px;
+}
