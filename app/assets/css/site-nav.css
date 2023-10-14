@@ -59,4 +59,20 @@
 .nav__button:hover {
   cursor: pointer;
   opacity: 0.5;
+}.dark-mode .logo:hover {
+  color: #03dac6;
+  text-shadow: 0 0 5px #03dac6;
+}
+.dark-mode .nav {
+  background-color: #3700b3;
+  color: white;
+}
+.dark-mode .nav__user .user__name {
+  color: white;
+}
+.dark-mode .nav__user .user__name:hover {
+  color: #bb86fc;
+}
+.dark-mode .nav__button {
+  background-color: #bb86fc;
 }
