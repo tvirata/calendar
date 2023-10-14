@@ -22,46 +22,68 @@
 .front-page__heading {
   font-size: 38px;
   margin-bottom: 2rem;
-  color:black;
-  width:100%;
+  color: black;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
-  animation:
-    typing 5s linear infinite;
+  animation: typing 5s linear infinite;
 }
 
-@keyframes typing{
-  from{width:0}
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
-.slogan{
+.slogan {
   margin-bottom: 2rem;
-  color:grey
+  color: grey;
 }
-.slogan:hover{
-  color:red
+.slogan:hover {
+  color: red;
 }
-.alreadyacc{
+.alreadyacc {
   padding-top: 25px;
   padding-bottom: 20px;
   font-size: 15px;
-  color:grey
+  color: grey;
 }
-.calimg{
-  height:350px;
+.calimg {
+  height: 350px;
   position: fixed;
   bottom: 350px;
   right: 300px;
 }
-.calimg:hover{
-  transform: scale(1.2)
+.calimg:hover {
+  transform: scale(1.2);
 }
 
-.footsies{
-  background-color:tan;
+.footsies {
+  background-color: tan;
   font-size: 15px;
   position: fixed;
   height: 70px;
   bottom: 0px;
   left: 0px;
   right: 0px;
+}}
+
+/* dark mode styling */
+.dark-mode .front-page .front-page__heading {
+  color: white;
+}
+.dark-mode .front-page__preview-container {
+  border: 1px solid #8a9db7;
+  border-radius: 5px;
+}
+.dark-mode .front-page__heading {
+  color: black;
+}
+.dark-mode .slogan {
+  color: grey;
+}
+.dark-mode .slogan:hover {
+  color: red;
+}
+.dark-mode .footsies {
+  background-color: #3700b3;
 }

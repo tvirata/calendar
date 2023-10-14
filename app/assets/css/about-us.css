@@ -94,3 +94,9 @@
 .about p {
   line-height: 27px;
 }
+
+/* dark mode styling */
+.dark-mode .profile {
+  background-color: #cea5fb;
+  box-shadow: 10px 10px 10px lightgray;
+}
