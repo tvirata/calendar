@@ -1,15 +1,17 @@
 .front-page {
-  margin: 4.5rem auto;
-  text-align: center;
+  margin-left: 20%;
+  margin-top: 12%;
+  /* text-align: center; */
 }
 .front-page__preview-container {
+  display: inline-block;
   overflow: hidden;
   margin: 0 auto 2rem;
   max-width: 320px;
   border: 1px solid #8a9db7;
   border-radius: 5px;
 }
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .front-page__preview-container {
     margin: 0 1rem 2rem;
   }
@@ -18,6 +20,48 @@
   width: 100%;
 }
 .front-page__heading {
-  font-size: 28px;
-  margin-bottom: 1.5rem;
+  font-size: 38px;
+  margin-bottom: 2rem;
+  color:black;
+  width:100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 5s linear infinite;
+}
+
+@keyframes typing{
+  from{width:0}
+}
+.slogan{
+  margin-bottom: 2rem;
+  color:grey
+}
+.slogan:hover{
+  color:red
+}
+.alreadyacc{
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  color:grey
+}
+.calimg{
+  height:350px;
+  position: fixed;
+  bottom: 350px;
+  right: 300px;
+}
+.calimg:hover{
+  transform: scale(1.2)
+}
+
+.footsies{
+  background-color:tan;
+  font-size: 20px;
+  position: fixed;
+  height: 90px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
