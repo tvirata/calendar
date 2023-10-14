@@ -60,24 +60,3 @@
   cursor: pointer;
   opacity: 0.5;
 }
-
-.footer {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  height: 48px;
-  width: 100%;
-  background-color: tan;
-  color: black;
-}
-
-.footer_about_us {
-  display: flex;
-  align-items: center;
-  margin-left: 2rem;
-}
-
-.about_us_button {
-  color: black;
-  font-weight: bolder;
-}

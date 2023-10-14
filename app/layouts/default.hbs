@@ -26,6 +26,13 @@
       </a>
       {{#if currentUser}}
       <div class="nav__user">
+        {{!-- added for dark mode when logged in --}}
+        <label id="dark-label">Dark Mode</label>
+        <label class="switch"> {{!-- toggle dark mode--}}
+          <input type="checkbox" id="darkMode"> {{!-- use input type checkbox --}}
+          <span class="slider"></span> {{!-- style checkbox into slider switch --}}
+        </label>
+
         <div class="user__name">{{currentUser.details.username}}</div>
         <a class="nav__button" href="/user/logout">Logout</a>
       </div>

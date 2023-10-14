@@ -91,4 +91,17 @@ body {
   overflow-x: hidden;
   height: 100vh;
   font-family: "Work Sans", sans-serif;
+}}
+/* Styling Dark Mode */
+.dark-mode .button {
+  color: white;
+  background-color: #bb86fc;
+}
+.dark-mode .button--edit-board {
+  background-color: #bb86fc;
+  color: black;
+}
+.dark-mode .button--remove-board {
+  background-color: #3700b3;
+  color: black;
 }
