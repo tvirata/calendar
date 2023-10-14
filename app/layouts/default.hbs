@@ -21,9 +21,11 @@
 <body>
   <div class="container">
     <div class="nav">
-      <a class="logo" href="{{#if currentUser}}/{{currentUser.details.username}}{{else}}/{{/if}}">
-        <img class="logo__image" src="/assets/images/logo.svg">
-        <span class="logo__text">Calendar</span></span>
+      <a class="logo logo__image" href="/">
+        <img src="/assets/images/logo.svg">
+      </a>
+      <a class="logo logo__text" href="{{#if currentUser}}/{{currentUser.details.username}}{{else}}/{{/if}}">
+        <span>Calendar</span></span>
       </a>
       {{#if currentUser}}
       <div class="nav__user">
