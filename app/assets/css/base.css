@@ -107,12 +107,13 @@ body {
 .dark-mode .button--remove-board {
   background-color: #3700b3;
   color: black;
-}}
+}
 
 .dark-mode .nav {
   background-color: #3700b3;
   color: white;
 }
+
 .dark-mode .nav__button {
   background-color: #bb86fc;
 }
