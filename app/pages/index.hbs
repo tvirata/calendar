@@ -1,8 +1,41 @@
+  {{!-- <head>
+    <style>
+      .parallax{
+        min-height: 500px;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .bg1{
+        background-image: "\assets\images\background1.jpg";
+      }
+      .bg2{
+        background-image: "\assets\images\background2.jpg";
+      }
+    </style> 
+  </head>--}}
 <div class="front-page">
-  <h2 class="front-page__heading">Welcome to my Calendar</h2>
+
   {{#if currentUser}}
+  <h2 class="front-page__heading">Welcome back, {{currentUser.details.username}}!</h2>
+  <h3 class ="slogan">Organize your itinerary the easy way!</h3>
   <a class="button button--large" href="/{{currentUser.details.username}}">Go to your board</a>
+  <a class="button button--large" href="/user/logout">Logout</a>
+  <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+  <img class="calimg" src="\assets\images\samplecalendar.PNG" alt="CALENDAR"/></div> </a>
   {{else}}
+  <h2 class="front-page__heading">Welcome to my Calendar</h2>
+  <h3 class ="slogan">Organize your itinerary the easy way!</h3>
   <a class="button button--large" href="/user/signup">Sign up!</a>
+  <h3 class ="alreadyacc">Already Have an Account?</h3>
+  <a class="button button--large" href="/user/login">Log in</a>
+  <div><a href="/user/signup">
+  <img class="calimg" src="\assets\images\samplecalendar.PNG" alt="CALENDAR"/></div> </a>
+  {{!-- <div class = "parallax bg1"></div> --}}
   {{/if}}
+
 </div>
+
+<footer class = "footsies">
+<div style="color:black; padding:30px; margin:0;
+        text-align:center;"><a href="/user/about-us";>About Us</a>
+</footer>
